@@ -1,0 +1,723 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:url" content="https://lipis.github.io/flag-icon-css/" />
+  <title>Container - VTS </title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="https://accex.khmini.com/assets/adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://accex.khmini.com/assets/adminlte/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://accex.khmini.com/assets/adminlte/bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://accex.khmini.com/assets/adminlte/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="https://accex.khmini.com/assets/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="https://accex.khmini.com/assets/adminlte/plugins/iCheck/all.css">
+  <link rel="stylesheet" href="https://accex.khmini.com/assets/adminlte/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+  <link rel="stylesheet" href="https://accex.khmini.com/assets/adminlte/plugins/timepicker/bootstrap-timepicker.min.css">
+  <link rel="stylesheet" href="https://accex.khmini.com/assets/adminlte/bower_components/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" href="https://accex.khmini.com/assets/adminlte/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="https://accex.khmini.com/assets/adminlte/dist/css/skins/_all-skins.min.css">
+  <link href="https://accex.khmini.com/assets/css/flag/flag-icon.css" rel="stylesheet">
+  <link href="https://accex.khmini.com/assets/css/flag/docs.css" rel="stylesheet">
+  <link href="https://accex.khmini.com/assets/css/mycss.css" rel="stylesheet">
+    <script src="https://accex.khmini.com/assets/js/ajax.googleapis.1.11.3.js"></script>
+  <script src="https://accex.khmini.com/assets/js/jquery.min.js"></script>
+  <script src="https://accex.khmini.com/assets/js/myjs.js"></script>  
+  <script src="https://accex.khmini.com/assets/css/flag/docs.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <script type="text/javascript" src="https://accex.khmini.com/assets/adminlte/dist/js/pages/dashboard2.js"></script> 
+<script type="text/javascript" src="https://accex.khmini.com/assets/adminlte/dist/js/demo.js"></script> 
+  <script>
+      if(window.location.hostname.indexOf('github') > 0) {
+        window.location.replace("http://flag-icon-css.lip.is/");
+      }
+  </script>
+  <style type="text/css">
+    .color-black a{
+      color: black;
+    }
+    .china{
+      font-size: 12px;
+    }
+    .show-print{
+      display: none;
+    }
+    .dropdown ul li {
+      color: #666;
+    }
+    @media print
+    {    
+      .no-print, .no-print *
+      {
+          display: none !important;
+      }
+      .show-print{
+        display: inherit;
+      }
+      /*page A5*/
+      .body-page-a5{
+        margin: 5px;
+      }
+      .title-page-a5{
+        font-size: 16px !important;
+        font-weight: bold !important;
+        margin: 10px 10px 10px 20px;
+      }
+      .content-page-a5{
+        font-size: 12px !important;
+        margin-left: 20px
+
+      }
+      .subtitle-page-a5{
+        font-size: 14px !important;
+        margin-right: 10px !important;
+      }
+      .subtitle-page-a5-description{
+        font-size: 9px !important;
+      }
+
+      .table-culum-page-a5-bill{
+        width: 250px !important;
+        font-size: 10px !important;
+        margin-top: -35px;
+      }
+      .table-culum-page-a5-issu{
+        width: 150px !important;
+        font-size: 10px !important;
+        margin-top: -40px;
+      }
+      .table-conten-page-a5-header{
+        font-size: 11px;
+        font-weight: bold;
+      }
+      .table-conten-page-a5-contect{
+        font-size: 10px;
+      }
+      .table-conten-page-a5-total{
+        font-size: 9px !important;
+      }
+      .table-box-driver-a5{
+        bottom   : 30px !important;
+        left: 200px !important;
+        font-size:8px !important;
+        text-align: left;
+      }
+     
+      .row-sing-a5{
+        font-size: 10px !important;
+        bottom: 40px !important;
+       
+      }
+      .qr-code-a5{
+        bottom: 30px !important;
+      }
+      .contect-condition-a5 {
+        font-size: 9px !important;
+      }
+      .contect-condition-a5-p {
+        font-size: 9px !important;
+      }
+      .paid-a5{
+        left: 150px !important;
+      }
+      .paid-a5-img{
+        width: 1000px  !important;
+      }
+    
+      .paid-a5-div{
+        margin-top: 55px !important;
+      }
+      .paid-a5-div span{
+        font-size: 40px !important;
+
+      }
+      .table {
+          border-top: none !important;
+          border-left: none !important;
+          border-right: none !important;
+          border-bottom: none !important;
+      }
+      @page { margin: 0; }
+    }
+  </style>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        languages();
+        get_active();
+    }); 
+  </script>
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="stylesheet" href="https://accex.khmini.com/assets/adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://accex.khmini.com//assets/css/s_custom/style.css">
+
+
+<!-- search option -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+<!--end search option -->
+  <script src="https://accex.khmini.com/assets/adminlte/bower_components/s_dataTable/jquery.dataTables.min.js"></script>
+<script src="https://accex.khmini.com/assets/adminlte/bower_components/s_dataTable/dataTables.bootstrap.min.js"></script>
+<script src="https://accex.khmini.com/assets/adminlte/bower_components/s_dataTable/dataTables.buttons.min.js"></script>
+<script src="https://accex.khmini.com/assets/adminlte/bower_components/s_dataTable/buttons.bootstrap.min.js"></script>
+<script src="https://accex.khmini.com/assets/adminlte/bower_components/s_dataTable/jszip.min.js"></script>
+<script src="https://accex.khmini.com/assets/adminlte/bower_components/s_dataTable/pdfmake.min.js"></script>
+<script src="https://accex.khmini.com/assets/adminlte/bower_components/s_dataTable/vfs_fonts.js"></script>
+<script src="https://accex.khmini.com/assets/adminlte/bower_components/s_dataTable/buttons.html5.min.js"></script>
+<script src="https://accex.khmini.com/assets/adminlte/bower_components/s_dataTable/buttons.print.min.js"></script>
+<script src="https://accex.khmini.com/assets/adminlte/bower_components/s_dataTable/buttons.colVis.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/pdfmake.min.js"></script> -->
+</head>
+<body class="hold-transition skin-blue sidebar-collapse layout-top-nav">
+<div class="wrapper">
+  <header class="main-header">
+    <nav class="navbar navbar-static-top">
+                <div class="navbar-header"></b> 
+          <a href="https://accex.khmini.com/" class="navbar-brand"><b>Express</b></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+                <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+                                                  <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                 Air Container <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                                      <li><a href="https://accex.khmini.com/debit_note_air/dashboard">Dashboard</a></li>
+                                    <li><a href="https://accex.khmini.com/debit_note_air">Container List</a></li>
+                                    <li><a href="https://accex.khmini.com/report_air/debit_note_list">Debit Note List</a></li>
+                                    <li><a href="https://accex.khmini.com/report_air/daily_report">Daily Print Report List </a></li>
+                                    <li><a href="https://accex.khmini.com/report_air/report_transation">Transaction List</a></li>
+                                    <li><a href="https://accex.khmini.com/debit_note_air/stock"><span class="english">In Stock Report</span></a></li>
+                </ul>
+              </li>
+                          <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                 Export Air & Land <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                                                      <li><a href="https://accex.khmini.com/export/debit_note_list">Debit Note List</a></li>
+                                                     <li><a href="https://accex.khmini.com/export/daily_report">Daily Receive Report List </a></li>
+                                  </ul>
+              </li>
+                                    <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Debit Note List <i class="fa fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                                <li><a href="https://accex.khmini.com/report/debit_note_list">Debit Note List</a></li>
+                                <li><a href="https://accex.khmini.com/debit_note/stock">In Stock Report</a></li>
+                                <li><a href="https://accex.khmini.com/report/ll_reports">LL Monthly Report</a></li>
+                                <li><a href="https://accex.khmini.com/report/vb_reports">VB Monthly Report</a></li>
+                                <li><a href="https://accex.khmini.com/report/sr_reports">SR Monthly Report</a></li>
+                              </ul>
+            </li>
+                        <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Reports <i class="fa fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                                <li><a href="https://accex.khmini.com/scan_bill/cashier">Scan Pickup</a></li>
+                                                                <li><a href="https://accex.khmini.com/report/daily_report">Daily Print Reports</a></li>
+                                                <li><a href="https://accex.khmini.com/report/issue_report">Issue Reports</a></li>
+                                                                                <li><a href="https://accex.khmini.com/report/report_transation">Transation List</a></li>
+                                                <li><a href="https://accex.khmini.com/report/cotnainer_list">Counting List</a></li>
+                                                <li><a href="https://accex.khmini.com/report/search_multi_receive">Multiple Receive</a></li>
+                                <li><a href="https://accex.khmini.com/report/rack_m_report">Rack M Report</a></li>
+                <li><a href="https://accex.khmini.com/report/rack_m_report">Container Report</a></li>
+                                <li><a href="https://accex.khmini.com/report/driver"><span class="english">Driver Report</span></a></li>
+              </ul>
+            </li>
+                        <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Liveing System <i class="fa fa-angle-down"></i>
+              </a>
+                <ul class="dropdown-menu ">
+                  <li><a href="https://accex.khmini.com/report/live"><span class="english">Live Counting</span></a></li>
+                  <li><a href="https://accex.khmini.com/report/scan_in"><span class="english">Live Scan In</span></a></li>
+                <!--   <li><a href="https://accex.khmini.com/report/scan_out"><span class="english">Old Scan Out</span></a></li>-->
+                  <li><a href="https://accex.khmini.com/report/list"><span class="english">Old Scan List</span></a></li> 
+                  <li><a href="https://accex.khmini.com/report/print_bill_list"><span class="english">Live Print Bill</span></a></li>
+                  <li><a href="https://accex.khmini.com/report/list_bill"><span class="english">Print Bill List</span></a></li>
+                     <li><a href="https://accex.khmini.com/report/rack_history"><span class="english">Rack Activity</span></a></li>
+                </ul>
+            </li>
+          </ul>
+          <form method="post" action="https://accex.khmini.com/report/search_tracking" class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input name="search" type="text" class="form-control" placeholder="Search Tracking&DebitNote">
+            </div>
+          </form>
+        </div>
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+                        <li class="dropdown user user-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img id="pro_thum" src="https://accex.khmini.com/assets/adminlte/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                <span class="hidden-xs">
+                    Chim Devit                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="user-header">
+                  <img id="pro_pic" src="https://accex.khmini.com/assets/adminlte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                  <p style="text-transform: uppercase;">
+                    Chim Devit - LCL Cashier                    <small>Print and save DN</small>
+                  </p>
+                </li>
+                <li class="user-footer">
+                  <div class="pull-left">
+                    <a href="https://accex.khmini.com/setting/profile" class="btn btn-default btn-flat">Profile</a>
+                  </div>
+                  <div class="pull-right">
+                    <a href="https://accex.khmini.com/admin/logout/" class="btn btn-default btn-flat">Sign out</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+
+
+
+
+  <!-- =============================================== -->
+    <!-- Left side column. contains the sidebar -->
+    <aside class="main-sidebar">
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+          <div class="pull-left image">
+            <img src="https://accex.khmini.com/assets/adminlte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          </div>
+          <div class="pull-left info">
+            <p>Chim Devit</p>
+            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          </div>
+        </div>
+        <!-- search form -->
+        <form action="#" method="get" class="sidebar-form">
+          <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="Search...">
+                <span class="input-group-btn">
+                  <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                  </button>
+                </span>
+          </div>
+        </form>
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="header">MAIN NAVIGATION</li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="https://accex.khmini.com/"><i class="fa fa-circle-o"></i> Dashboard </a></li>
+              <li><a href="https://accex.khmini.com/sale"><i class="fa fa-circle-o"></i> Sale </a></li>
+            </ul>
+          </li>
+          <li class="treeview active">
+            <a href="#">
+              <i class="fa fa-files-o"></i>
+              <span>Member List</span>
+              <span class="pull-right-container">
+                <span class="label label-primary pull-right">4</span>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li class="active"></li>
+            </ul>
+          </li>
+
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-pie-chart"></i>
+              <span>Prodcut</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="https://accex.khmini.com/product/add"><i class="fa fa-circle-o"></i> Add New Product</a></li>
+              <li><a href="https://accex.khmini.com/product/list"><i class="fa fa-circle-o"></i> Product List</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-laptop"></i>
+              <span>Report Sale</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="../UI/general.html"><i class="fa fa-circle-o"></i> Daily Report</a></li>
+              <li><a href="../UI/icons.html"><i class="fa fa-circle-o"></i> Monthly Report</a></li>
+              <li><a href="../UI/buttons.html"><i class="fa fa-circle-o"></i> Commission Report</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+  <!-- =============================================== --><style type="text/css">
+	#totalprice {
+		font-family: Tahoma, "Trebuchet MS", sans-serif;
+		margin-right: 15px; 
+		font-size: 13px;
+	}
+	.foot_desc {
+		border: none;
+	}
+	.foot_desc tr td {
+		font-size: 13px;
+		font-family: 'Times New Roman' !important;
+	}
+	.a_remark {
+		font-size: 12px; width: 390px
+	}
+	.sign {
+		width: 100%;
+		border: none;
+		margin-top: 100px;
+	}
+	.sign tr td {
+		text-align: center;
+		font-weight: bold;
+	}
+	.sign tr td:last-child {
+		position: relative;
+	}
+	.sign tr td:last-child img {
+		/*position: absolute;*/
+		/*right: 0;*/
+		margin-top: -100px;
+	}
+	#img_paid {
+	  position: absolute;
+	  z-index: 100;
+	  left: 410px;
+	  top: 155px;
+	  width: 350px;
+	}
+	.paid_content {
+		position: relative;
+		width: 100%;
+	}
+	.paid_content img {
+		width: 100%;
+	}
+	.paid_content p {
+	  top: 120px;
+	  left: 70px;
+	  font-size: 45px;
+	  color: #d01212;
+	  position: absolute;
+	}
+	@media print {
+		.invoice {
+			padding: 0 15px 0 10px;
+		}
+	  	#totalprice {
+			font-family: Tahoma, "Trebuchet MS", sans-serif;
+			margin-right: 15px; 
+			font-size: 13px;
+		}
+		.foot_desc tr td {
+			padding: 0 5px;
+			font-size: 13px;
+		}
+		.a_remark {
+			width: 190px;
+		}
+		.table-box-driver-a5 {
+			top: 15px;
+		}
+		#img_paid {
+		  left: 50%;
+		  top: 20px;
+		}
+		.paid_content img {
+			width: 250px;
+		}
+		.paid_content p {
+		  	color: #d01212 !important;
+		  	top: 80px;
+			left: 45px;
+			font-size: 35px;
+			color: #d01212;
+			position: absolute;
+		}
+	}
+</style>
+<div class="content-wrapper body-page-a5">
+      	<section class="content-header">
+	        <h1>Transation</h1>
+	        <ol class="breadcrumb">
+	          <li><a href="https://accex.khmini.com/"><i class="fa fa-dashboard"></i> Home</a></li>
+	          <li><a  href="https://accex.khmini.com/debit_note">Debit Note List</a></li><li><a  href="https://accex.khmini.com/debit_note/generate/">Transation</a></li>	          <input type="hidden" id="container_no">
+	        </ol>
+      	</section>
+          	<form  onsubmit="return confirm('Do you really want to save & print this transaction?');" action="https://accex.khmini.com/debit_note/save_transaction" method="post" role="form">
+    	<section class="invoice">
+		    <div class="row">
+		      <div class="col-xs-12">
+		      	 <span style="font-size: 21px;font-weight: bold;margin: 10px 30px 0px 0px" class="pull-right subtitle-page-a5">Express-Transaction </span><br>
+		        <h3 class="title-page-a5" style="font-weight: bold;"> <!-- WAN SHENG TRANSPORATION -->
+		          <span class="content-page-a5" style="font-size: 21px;margin-left: 3%;font-weight: bold;"><p>
+					<!-- International Freight Transportation and Logistics -->&nbsp;<br>
+				<!-- 	Hotline : 069 99 55 10 / 089 99 55 10 / 067 99 55 10 -->
+				</p></span>
+		        </h3> 
+		        <input type="hidden" value="EK SORMSiCHAN" name="customer_list_name">
+		        <input type="hidden" value="26531EKR" name="customer_code">
+		        <input type="hidden" value="603E0733" name="transaction_id">
+		        <input type="hidden" value="2026-03-06" name="date_print">
+		        <input type="hidden" value="2026-03-06" name="date_out">
+		       	<input type="hidden" value="Chim Devit" name="user_name">
+		       	<input type="hidden" id="grand_total_amount" name="grand_total">
+		        <input type="hidden" value="out" name="status">
+		        <input type="hidden" value="" name="remark">
+		      </div>
+		    </div>
+		    <div class="row invoice-info">
+		      <div class="col-sm-6">
+		        <div class="pull-left">
+		          <address>
+		           <div style="border:0px dotted">
+		              <table class="table-culum-page-a5-bill" style="padding: 5px 5px 5px 15px;margin-left: 20px;"  width="300">
+		                <tr>
+		                	<td width="60">BILL TO</td>
+		                	<td style="text-transform: uppercase;">&nbsp;&nbsp;&nbsp;: LONG</td>
+		                </tr>
+		                <tr>
+		                  <td width="60">CODE</td>
+		                  <td style="padding-left: 10px;"> : 25622PSW</td>
+		                </tr>
+		              </table>
+		           </div>
+		          </address>
+		        </div>
+		      </div>
+		      <div style="text-align: right;padding-right: 30px;" class="col-sm-6">
+		        <div class="pull-right">
+		          <table class="table-culum-page-a5-issu" style="text-align: left;"  width="200">
+		            <tr>
+		              <td class="pull-right">DATE</td>
+		              <td style="padding-left: 10px;">: 2026-03-06</td>
+		            </tr>
+		            <tr>
+		              <td class="pull-right">POD#</td>
+		              <td style="padding-left: 10px;">: 603E0733</td>
+		            </tr>
+		          </table><br>
+		           		          	<div class="pull-right">
+		          		<!-- First Weight=1.25$/Kg, Next Weight=1$/Kgs -->
+		          	</div>
+		          			        </div>
+		      </div>
+		    </div>
+		    <div style="margin: 0px;padding: 0px; width: 100%;">
+		        <table style="text-align: center;" style="border: 0px;" class="table table-sm">
+		          <thead>
+		          <tr class="table-conten-page-a5-header">
+		          		<th style="text-align: center;width: 20%">DN#/Loading</th>
+			            <th style="text-align: center;width: 60%">Description</th>
+			            <th style="text-align: center;width: 5%">CBM/Weight</th>  	
+			            <th style="text-align: center;width: 5%">Unit&nbsp;price</th>
+			            <th style="text-align: center;width: 5%">Amount</th>
+		          </tr>
+		          </thead>
+		         <tbody>
+		          			
+		          			<tr class="table-conten-page-a5-contect">
+					       		<td rowspan="7">
+				       			 	<input type="hidden" value="EG260202070" name="debit_note_no[]">
+				       			  	<input type="hidden" value="GZ" name="warehouse[]">
+				       			   	<input type="hidden" value="2026-02-27" name="loading_date[]">
+				       			    <input type="hidden" value="" name="title[]">
+				       			    <input type="hidden" value="0=++++" name="all_cbm[]">
+							        <input type="hidden" value="1+1+1+1+1=5" name="all_qty[]">
+							        <input type="hidden" value="1.07=1.07" name="all_weight[]">
+							        <input type="hidden" value="5.00" name="total_amount[]">
+					       			2026-02-27<br>
+					       			EG260202070					       		</td>
+				   			</tr>
+							<tr class="table-conten-page-a5-contect"><td style="text-align: left;">GZ - EP KGs(78982894989007)</td>
+											   				<td>0.5</td>
+											   		 		<td>1</td>
+												   			<td style="text-align: right;">$<span style="margin-right: 10px;" class="totalprice">1</span></td></tr><tr class="table-conten-page-a5-contect"><td style="text-align: left;">GZ - EP KGs(773407338243157)</td>
+											   				<td>0.5</td>
+											   		 		<td>1</td>
+												   			<td style="text-align: right;">$<span style="margin-right: 10px;" class="totalprice">1</span></td></tr><tr class="table-conten-page-a5-contect"><td style="text-align: left;">GZ - EP KGs(JT3154090879307)</td>
+											   				
+												   			
+												   			
+											   				<td>0.5</td>
+											   		 		<td>1</td>
+												   			<td style="text-align: right;">$<span style="margin-right: 10px;" class="totalprice">1</span></td></tr><tr class="table-conten-page-a5-contect">
+									   				<td style="text-align: left;" colspan="3">DELIVERY (603E0733) QTY: =3
+									   				</td>
+									   				<td style="text-align: right;">$<span style="margin-right: 10px;" class="totalprice">1</span></td>	
+									   			</tr>		          	</tbody>
+		            <tr id="myrow">
+		              <td style="text-align: left;font-size: 10px;height: 65px; position: relative;" colspan="2" rowspan="4">
+		                <div style="position: absolute;bottom: 8px;">
+		                   <textarea name="remark" class="form-control a_remark">Note: </textarea>
+		                </div>
+		               <div class="table-box-driver-a5" style=" position : absolute;bottom: 8px;left: 400px">
+		                    <span class="table-box-driver-span" style="width: 100px;">Date Print:</i> <i>2026-03-06 14:08:32</span>
+		                    		                    <br><span class="table-box-driver-span" style="width: 100px;">Driver:</span>  <span> Chun Meng leap</span>  		                    		                    <br><span class="table-box-driver-span" style="width: 100px;">ISSUE BY:</i> <i> Chim Devit</span><br>
+		                </div>
+		              </td>
+		              <td class="table-conten-page-a5-total" style="text-align: left;border-left:0px;border-right:0px;border-bottom:0px;padding:2px;">TOTAL&nbsp;QTY</td>
+		              <td style="text-align: left;border-left:0px;border-right:0px;border-bottom:0px; padding:2px;">:</td>
+		              <td class="table-conten-page-a5-total" style="text-align: right;border-left:0px;border-right:0px;border-bottom:0px; padding:2px;"><span style="margin-right: 15px;">3</span></td>
+		            </tr>
+		            <tr>
+		              <td  class="table-conten-page-a5-total" style="text-align: left;border:0px;padding:2px;">GRAND&nbsp;TOTAL</td>
+		              <td style="text-align: left;border:0px; padding:2px;">:</td>
+		              <td class="table-conten-page-a5-total" style="text-align: right;border:0px; padding:2px;"><span class="b" id="totalprice">$0.00</span></td>
+		            </tr>
+		        </table>
+		        <div style="text-align: right;font-size: 12px;margin-top: -15px;padding-right: 35px;" class="col-xs-12">
+		        	អត្រា​ប្តូរ​ប្រាក់​ 1USD=4,100រៀល
+		        </div>
+		    </div>
+		    <table class="sign">
+		    	<tr>
+		    		<td>
+		    			===================<br>
+		    			បានទទួលទំនិញ/ទូទាត់ប្រាក់
+		    		</td>
+		    		<td>
+		    			===================<br>
+			    		អ្នកដឹកទំនិញបានទទួលប្រាក់		    		</td>
+		    		<td>
+		    			==================<br>
+		    			បេឡា បានទទួលប្រាក់
+		    		</td>
+		    		<td>
+		    			<img   width='60' src='https://accex.khmini.com//global/tmp/qr_codes/511630.png'>		    		</td>
+		    	</tr>
+		    </table>
+		    <div style="margin-top: 0px;margin-left: 1px" class="row contect-condition-a5"><br><br>
+		      <p class="contect-condition-a5-p" style="font-size: 14px;">១. សំរាប់ការបាត់បងទំនិញឬខូចខាត សំណងតំលៃខ្ពស់បំផុត គឺសង3ដងនៃថ្លៃដឹកជញ្ជូន (សំរាប់ទំនិញផុយស្រួយងាយបាក់បែក គឺមិនទទួលរ៉ាប់រងសំណងឡើយ)។<br>
+		        ដឹកជញ្ជនពីសកលលោកមកកម្ពុជាទាំងផ្លវគោក ផ្លវទឹក ផ្លវអាកាស ជាមួយ តម្លៃសមរម្យ ជឿជាក់ និងរហ័សទាន់ចិត្ត។
+		      </p>
+		    </div>
+		    	        <div style="width: 80%; overflow-y: hidden;">
+		        <table class="foot_desc">
+	                 <tr>
+	                    <td>Who's print</td>
+	                    <td> : </td>
+	                    <td>Chim Devit</td> 
+	                </tr>
+	                <tr>
+	                    <td>Payment</td>
+	                    <td> : </td>
+	                    <td>
+	                    		                    </td>
+	                </tr>
+	                <tr>
+	                    <td>Remark&nbsp;Received</td>
+	                    <td> : </td>
+	                    <td></td>
+	                </tr>
+	                 <tr>
+	                    <td>Memo</td>
+	                    <td> : </td>
+	                    <td></td>
+	                </tr>
+		        </table>
+		    </div>
+		</section>
+		</form>
+      </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+		$("#txt_paid").click(function(){
+			$(this).select();
+		});
+		var sum=0;
+		$('.totalprice').each(function(){
+		     sum += parseFloat($(this).text()); 
+		});
+		$('#totalprice').text('$'+sum.toFixed(2));
+		$('#grand_total_amount').val(sum.toFixed(2));
+				$('#due').text(sum.toFixed(2));
+		    });
+  </script>
+
+
+
+
+
+
+
+  <footer class="main-footer no-print">
+    <div class="pull-left hidden-xs">
+      <b>Version</b> 1.0
+    </div>
+    <strong>Copyright &copy; 2010-2020</strong> 
+    <div class="pull-right hidden-xs">
+    All rights
+    reserved.
+    </div>
+  </footer>
+
+</div>
+<!-- ./wrapper -->
+
+<!-- Bootstrap 3.3.7 -->
+<script src="https://accex.khmini.com/assets/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Select2 -->
+<script src="https://accex.khmini.com/assets/adminlte/bower_components/select2/dist/js/select2.full.min.js"></script>
+<!-- InputMask -->
+<script src="https://accex.khmini.com/assets/adminlte/plugins/input-mask/jquery.inputmask.js"></script>
+<script src="https://accex.khmini.com/assets/adminlte/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="https://accex.khmini.com/assets/adminlte/plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<!-- date-range-picker -->
+<script src="https://accex.khmini.com/assets/adminlte/bower_components/moment/min/moment.min.js"></script>
+<script src="https://accex.khmini.com/assets/adminlte/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap datepicker -->
+<script src="https://accex.khmini.com/assets/adminlte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<!-- bootstrap color picker -->
+<script src="https://accex.khmini.com/assets/adminlte/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+<!-- bootstrap time picker -->
+<script src="https://accex.khmini.com/assets/adminlte/plugins/timepicker/bootstrap-timepicker.min.js"></script>
+<!-- SlimScroll -->
+<script src="https://accex.khmini.com/assets/adminlte/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- iCheck 1.0.1 -->
+<script src="https://accex.khmini.com/assets/adminlte/plugins/iCheck/icheck.min.js"></script>
+<!-- FastClick -->
+<script src="https://accex.khmini.com/assets/adminlte/bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="https://accex.khmini.com/assets/adminlte/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="https://accex.khmini.com/assets/adminlte/dist/js/demo.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $('.sidebar-menu').tree()
+  })
+</script>
+</body>
+</html>
